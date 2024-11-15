@@ -3,9 +3,9 @@
 nums = [1,2,3,4]
 
 total = 1
-for i in nums:
-	total = total * i
-
+if len(nums) > 0:
+	for i in nums:
+		total = total * i
 print(total)
 
 #2. Write a Python program to remove duplicates from a list

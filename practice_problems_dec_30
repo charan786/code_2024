@@ -1,0 +1,27 @@
+# Get each digit from a number in the reverse order. If the given integer number is 7536, the output shall be “6 3 5 7“, with a space separating the digits.
+
+num = 7536
+reverse = ""
+while(num !=0):
+	temp = num%10
+	reverse += str(temp)+" "
+	num = num //10
+print(reverse)
+
+# Find the sum of the digits of a number until the result has only one digit
+number = 78979857
+sum = 0
+while(number !=0):
+	sum += number%10
+	number = number //10
+print(sum)
+while sum > 10:
+	sum = sum//10
+print(sum)
+
+# Print a downward half-pyramid pattern of stars
+
+rows = 7
+while(rows>=1):
+	print('*'*rows)
+	rows -= 1
